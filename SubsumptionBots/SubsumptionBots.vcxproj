@@ -147,12 +147,15 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AFSM.h" />
     <ClInclude Include="Agent.h" />
     <ClInclude Include="DisplayLoop.h" />
+    <ClInclude Include="Pipe.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AFSM.cpp" />
     <ClCompile Include="Agent.cpp" />
     <ClCompile Include="DisplayLoop.cpp" />
     <ClCompile Include="stdafx.cpp">

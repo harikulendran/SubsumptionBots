@@ -7,14 +7,15 @@ struct Coord {
 class Agent {
 private:
 	Coord center, vertices[3];
-	double theta;
+	double theta, mag;
 	double size = 30;
+	int mod;
 
 public:
 	Agent();
 	void rotate(double deg);
-	void move(int dir, int mag);
+	void move(int dir, double m);
 
-private:
+public:
 	void updateVertices();
 };
