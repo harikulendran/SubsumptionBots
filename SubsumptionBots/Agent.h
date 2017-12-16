@@ -2,6 +2,7 @@
 
 struct Coord {
 	double x, y;
+	Coord(double xx=0, double yy=0) : x(xx), y(yy) {}
 };
 
 class Agent {
@@ -13,9 +14,11 @@ private:
 
 public:
 	Agent();
+	void update();
 	void rotate(double deg);
 	void move(int dir, double m);
 
 public:
+	void sense();
 	void updateVertices();
 };

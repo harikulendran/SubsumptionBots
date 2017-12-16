@@ -1,14 +1,20 @@
 #include "Agent.h"
-#include <allegro5\allegro_primitives.h>
+#include <allegro5/allegro_primitives.h>
 #include <cmath>
 
 #define PI 3.14159265
 
-Agent::Agent() {
-	center.x = 100;
-	center.y = 100;
+Agent::Agent() : center(100,100) {
 	theta = 0;
 	mag = 0;
+}
+
+void Agent::update() {
+
+}
+
+void Agent::sense() {
+
 }
 
 void Agent::updateVertices() {
